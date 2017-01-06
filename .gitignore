@@ -1,33 +1,64 @@
-# .gitignore for Grails 1.2 and 1.3
-# Although this should work for most versions of grails, it is
-# suggested that you use the "grails integrate-with --git" command
-# to generate your .gitignore file.
+**/*.swp
+/out
+/bin
+/*/bin
+/conf
+*.ipr
+*.iml
+*.iws
+*idea
+/doc
+**/cobertura.ser
+/cruise/coverage/report
+/downloads
+*/test/groovy/grails/config
+*/test/grails-app
+stacktrace.log
+/dist
+**/idea-target
+*/target
+*/build
+/grails.iws
+.gradle
+.DS_Store
+.classpath
+.project
+.settings
+/*/build/*
+/*/.settings/*
+/*/out/*
+/*/*.iml
+/eclipse-build
+*.idea
+/.idea/
+/grails-test-suite-uber/configured/
+*/.gitignore
+**/.slcache
+**/.slcache/*	
 
-# web application files
-/web-app/WEB-INF/classes
+##### adding for mutiple module paths #####
+**/*.iml
+**/*.ipr
+**/*.iws
+**/*.idea
 
-# default HSQL database files for production mode
-/prodDb.*
+**/target
+**/build
+**/logs/
+**/log/
+**/stacktrace.log
 
-# general HSQL database files
-*Db.properties
-*Db.script
+**/.project
+**/.classpath
+**/*.class
 
-# logs
-/stacktrace.log
-/test/reports
-/logs
+**/*.war
+**/*.zip
+**/*.zip.*
+**/test/reports/
 
-# project release file
-/*.war
+**/hs_err_pid*
 
-# plugin release files
-/*.zip
-/plugin.xml
-
-# older plugin install locations
-/plugins
-/web-app/plugins
-
-# "temporary" build files
-/target
+##### adding frontend paths #####
+**/node_modules
+**/bower_components
